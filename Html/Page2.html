@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="wel" style="text-align: center; size: 25"></h1>
+
+    <script>
+      function getUserName() {
+        var url = location.href;
+        var user = url.substring(url.indexOf("=") + 1);
+        splitUserAndPass = user.split("&"); //to separate user and password
+        var userName = splitUserAndPass[0].replace(/\+/g, "  "); //to replace the + charcter with white space
+        return (document.getElementById("wel").innerHTML =
+          "Welcome :  &nbsp; " + userName);
+      }
+      getUserName();
+    </script>
+  </body>
+</html>

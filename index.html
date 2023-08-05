@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 8</title>
+  </head>
+  <body>
+    <form target="_blank" action="/Html/Page2.html" method="get">
+      <fieldset>
+        <legend>Login Form</legend>
+        <label for="First Name">
+          First Name: <input type="text" />
+          <br />
+        </label>
+        <label for="UserName">
+          User Name
+          <input
+            type="text"
+            name="UesrName"
+            placeholder="Enter your user name here"
+            id="Name"
+            style="margin: 5px"
+          />
+        </label>
+        <br />
+        <label for="Passowrd">
+          Passowrd
+          <input
+            type="password"
+            name="Passowrd"
+            placeholder="Enter Your Password"
+            style="margin: 5px"
+            id="Passowrd"
+          />
+        </label>
+        <br />
+        <input type="checkbox" onclick="checkClickFunc()" id="agree" />
+        <label>get date from Local storage</label>
+        <br />
+        <input
+          type="submit"
+          value="Login"
+          style="margin: 10px"
+          onclick="set_get()"
+        />
+      </fieldset>
+    </form>
+    <div id="Demo"></div>
+    <div id="demo"></div>
+    <br />
+    <hr />
+    <input type="text" id="pID" />
+    <input
+      type="button"
+      id="button2"
+      onclick="getProduct()"
+      value="show product"
+    />
+    <div id="prod"></div>
+    <div id="id"></div>
+    <hr />
+    <select id="userList"></select>
+    <div id="selectedUserData"></div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
